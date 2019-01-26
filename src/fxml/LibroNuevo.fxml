@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="400.0" spacing="30.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LibroNuevoController">
+   <children>
+      <Label text="Ingreso de nuevo libro">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="80.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="25.0" text="ISBN:" />
+                  <Label prefHeight="25.0" text="Título:" />
+                  <Label prefHeight="25.0" text="Asignatura:" />
+                  <Label prefHeight="25.0" text="Curso:" />
+                  <Label prefHeight="25.0" text="Edición:" />
+                  <Label prefHeight="25.0" text="Lugar edición:" />
+                  <Label prefHeight="25.0" text="Año edición:" />
+                  <Label prefHeight="25.0" text="Precio:" />
+                  <Label prefHeight="25.0" text="Stock inicial:" />
+                  <Label prefHeight="25.0" text="Autor 1:" />
+                  <Label prefHeight="25.0" text="Autor 2:" />
+                  <Label prefHeight="25.0" text="Autor 3:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="230.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="txtIsbn" />
+                  <TextField fx:id="txtTitulo" />
+                  <TextField fx:id="txtAsignatura" />
+                  <TextField fx:id="txtCurso" />
+                  <TextField fx:id="txtEdicion" />
+                  <TextField fx:id="txtLugar" />
+                  <TextField fx:id="txtAnio" />
+                  <TextField fx:id="txtPrecio" />
+                  <TextField fx:id="txtStock" />
+                  <ComboBox fx:id="cbAutor1" prefWidth="230.0" />
+                  <ComboBox fx:id="cbAutor2" prefWidth="230.0" />
+                  <ComboBox fx:id="cbAutor3" prefWidth="230.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarRegistro" prefWidth="100.0" text="Guardar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelarRegistro" prefWidth="100.0" text="Cancelar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

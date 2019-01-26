@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="700.0" maxWidth="250.0" minHeight="700.0" minWidth="250.0" prefHeight="700.0" prefWidth="250.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="250.0" prefWidth="250.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="206.0" prefWidth="190.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="lblNombre" text="Nombre:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCedula" text="N. cédula: ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblEmail" text="E-mail:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTipo" text="Tipo">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="btnCerrarSesion" onMouseClicked="#cerrarSesion" onMouseEntered="#cerrarSesionSubraayar" onMouseExited="#cerrarSesionDesubrayar" text="Cerrar Sesión" textFill="#1587c9">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <VBox fx:id="vbBotones" alignment="CENTER" maxWidth="250.0" prefHeight="450.0" prefWidth="250.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnEditorial" mnemonicParsing="false" onAction="#selecEditorial" prefWidth="200.0" text="Editoriales">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCliente" mnemonicParsing="false" onAction="#selecCliente" prefWidth="200.0" text="Clientes">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAutor" mnemonicParsing="false" onAction="#selecAutor" prefWidth="200.0" text="Autores">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLibro" mnemonicParsing="false" onAction="#selecLibro" prefWidth="200.0" text="Libros">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPedidoS" mnemonicParsing="false" onAction="#selecPedidoS" prefWidth="200.0" text="Pedidos salientes">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPedidoE" mnemonicParsing="false" onAction="#selecPedidoE" prefWidth="200.0" text="Pedidos entrantes">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTransporte" mnemonicParsing="false" onAction="#selecTransporte" prefWidth="200.0" text="Transporte">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#selecReporte" prefWidth="200.0" text="Reportes">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <StackPane fx:id="panel" minHeight="700.0" minWidth="750.0" prefHeight="700.0" prefWidth="750.0">
+         <children>
+            <Label alignment="CENTER" text="Seleccione una opción del panel izquierdo" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</HBox>

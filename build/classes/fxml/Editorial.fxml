@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditorialController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="700.0">
+         <children>
+            <Label text="Editoriales" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="540.0" prefWidth="700.0">
+         <content>
+            <TableView fx:id="tblData" />
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="750.0" spacing="40.0">
+         <children>
+            <Button fx:id="btnNuevoRegistro" mnemonicParsing="false" onAction="#nuevoRegistro" prefWidth="160.0" text="Nuevo registro">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRecargar" mnemonicParsing="false" onAction="#recargar" prefWidth="160.0" text="Recargar tabla">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
